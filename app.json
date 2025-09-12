@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Figure AI",
+    "slug": "figure-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "figureai",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.recapp.figureai",
+      "appleTeamId": "3WL9FYSV99",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to take photos for creating AI figurines.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select photos for creating AI figurines."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "edgeToEdgeEnabled": true,
+      "package": "com.recapp.figureai"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "splash": {
+      "backgroundColor": "#1a1a1a",
+      "resizeMode": "contain"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
+  }
+}
